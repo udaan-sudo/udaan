@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udaan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="res/logo.png">
+
+ </head>
+ <body>
+    <div class="container">
+        <header>
+            <div class="head-left">
+                <a href="https://udaan-io.netlify.app/"></a>
+                <img src="res/logo.png" alt="logo" />
+                </a>
+        
+            </div>
+            
+            <div class="head-right">
+                
+                <p><a href="#" id="home-btn">Home</a></p>
+                <p><a href="#" id="about-btn">About Us</a></p>
+                <p><a href="#" id="events-btn">Events</a></p>
+                
+                <p><a href="https://wa.me/qr/V627MFCTFSZOC1" id="contact-btn">Contact Us</a></p>
+                <p><a href="#" id="share-btn">Share</a></p>
+                <div id="share-popup">Link copied!</div>
+                <script>
+                
+                </script>
+                <div class="hover-box" id="hover-box"></div>
+            </div>
+        </header>
+
+        <section class="hero-section autoBlur" id="home-section">
+            <div class="hero-vid">
+                <video id="slow" autoplay muted loop playsinline class="hero-video">
+                <source src="res/hero-1.mp4" type="video/webm">
+                <source src="res/hero-1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+               
+                <div class="hero-info">
+                    <h1 style="display: inline-block; vertical-align: middle;">TAKE-OFF</h1>
+                    <img src="res/tkof.png" class="tkof">
+
+                    <p>As Udaan takes flight—sweeping through a whirlwind of creativity, innovation, and unity. From thought provoking talks to electrifying fests, every event sparks ambition and strengthens our campus spirit. This isn’t just a club-- it’s your launchpad to rise beyond the ordinary. Let your dreams soar. Let them begin with Udaan.</p>
+                    <a href="https://chat.whatsapp.com/IBBTIbSIi4GKeEtRlDdckb" target="_blank">
+                    <button>Join Community</button>
+                    </a>
+                </div>
+
+                <h1 class="REIMAGINE">Reimagine.</h1>
+                
+            </div>
+        </section>
+        <section class="about-section" id="about-section">
+            <p>Welcome to Udaan </p>
+            <div class="autoBlur">
+                <h1>The LPU's Most Anticipated<br> Club</h1>
+            </div>
+            
+            <img src="res/overlay.png" class="overlay">
+            <div class="image-box autoTakeFull ">
+                <img src="res/about.png" alt="about-img">
+            </div>
+            <h4>Club begins your college-life, an EPIC ADVENTUROUS LIFE!</h4>
+            <h5>Every member, whether organizing, brainstorming, performing, or cheering from the sidelines, brings something unique to our shared journey. Your ideas shape our vision, your efforts build our legacy, and your presence creates our spirit.</h5>
+        </section>
+        <section class="info-section" >
+            <h3>Into Udaan- resonate with the feel</h3>
+            <p>From electrifying concerts and tech-packed hackathons to unforgettable trips and cultural fests, we bring students together to create, explore, and celebrate. Based in LPU, our club is the heartbeat of innovation and adventure on campus—one event at a time.</p>
+            
+            <div class="info-cards autoDisplay">
+            
+            <div class="card">
+                <h1>Concierto</h1>
+                <h3 id="para">Please login to DevZone to register.</h3>
+
+                <video src="res/concierto.mp4" autoplay loop muted playsinline></video>
+                <button id="openModal" class="dev-only">Register</button>
+
+            </div>
+            <div class="card autoDisplay">
+            <div class="card">
+            <h1>Aventura</h1>
+            <p></p>
+            <video id="slow" src="res/adventura.mp4" autoplay loop muted plays-inline></video> 
+            <button>Coming Soon</button> 
+            </div>                 
+        </div> 
+
+        <div class="card autoDisplay">
+            <div class="card">
+            <h1>Dev Zone</h1> 
+            <h3>For Core Team ONLY!</h3>
+            <video src="res/coming-soon.mp4" autoplay loop muted plays-inline></video>  
+            <button id="devzone">Enter</button>      
+            </div>         
+        </div>
+
+        </section>
+        <div class="modal" id="modal" style="display:none;">
+            <div class="modal-content" id="modalContent">
+                <button class="close-btn" id="closeModal">&times;</button>
+                <h2>Register Now - Udaan Freshers</h2>
+                <h4>@250/- Only per-ticket</h4>
+                <input type="text" id="name" placeholder="Name" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <input type="tel" id="phone" placeholder="Phone Number" required />
+                <p>Note* You will receive the ticket on E-mail and SMS.</p>
+                <button class="continue-btn" id="payBtn">Generate Ticket</button>
+            </div>
+        </div>
+        <div class="dev-modal" id="dev-modal" style="display:none;">
+            
+            <!-- Login Modal-->
+            <div class="dev-modal-content" id="dev-modalContent" style="display: block;" >
+                <button class="dev-close-btn" id="dev-closeModal">&times;</button>
+                <h2>Log-In</h2>
+                <h4>Welcome to the DevZone</h4>
+                <input type="text" id="dev-name" placeholder="Name" required />
+                <input type="email" id="dev-email" placeholder="Email" required />
+                <input type="password" id="password" placeholder="Password" required />
+                <p>Note* Core Team Only!</p>
+                <button class="enter-btn" id="enter">Enter</button>
+            </div>
+
+
+            <!-- QR SCANNER SECTION -->
+            <div class="qr-section" id="qr-section" style="display: none;">
+                <button class="qr-close-btn" id="qr-close-btn">&times;</button>
+                <h2>Scan Here</h2>
+                <h4>One scan validity-ONLY!</h4>
+                
+                <div class="cam-view"id="reader"></div>
+                <p id="scan-status" style="text-align: center; font-weight: bold; margin-top: 15px;"></p>
+                
+            </div>
+        </div>
+                <!--
+                <div class="card autoDisplay">
+                    <h1>Hackathons</h1>
+                    <p>Udaan’s hackathons fuse tech, caffeine, and creativity into one high-voltage experience. Think 24 hours of rapid prototyping, buzzing minds, and breakthrough ideas. It’s not just code—it’s culture. At LPU, these events are launchpads where innovation ignites, collaboration thrives, and the next big thing gets its start.</p>
+                    <video src="res/hackathon.mp4" autoplay loop muted plays-inline></video>
+                    <button>Coming Soon </button>
+                </div>
+                
+                <div class="card autoDisplay">
+                <h1>Embark</h1>
+                <p>On your new journey with us ...</p>
+                <video src="res/embark.mp4"  autoplay loop muted plays-inline></video>
+                <button>Coming Soon</button>                 
+                </div>
+                -->
+
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact-section" >
+            <p>Join Udaan</p>
+            <div class="autoBlur"  >
+                <h1>BRING ABOUT THE NEW ERA OF UNIVERSITY EVENTS</h1>
+            </div>
+            <a href="https://wa.me/qr/V627MFCTFSZOC1" target="_blank" rel="noopener">
+                <button>Contact Us </button>
+            </a>
+            <img class="img-1" src="res/img-1.png" alt="contact-img">
+            <img class="img-2" src="res/img-2.jpg" alt="contact-img">
+            <img class="img-3" src="res/logo.png" alt="contact-img">
+        </section>
+
+        <section class="footer" >
+            <p>@Udaan 2025. All rights reserved</p>
+            <ul>
+                <li><a href="https://www.instagram.com/udaan.lpu?igsh=MzRlODBiNWFlZA=="><i class='bxl  bx-instagram'></i> </a></li>
+                <li><a href="https://chat.whatsapp.com/IBBTIbSIi4GKeEtRlDdckb"><i class='bxl  bx-whatsapp'></i> </a></li>
+                
+            </ul>
+            <p>Privacy Policy</p>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+
+    <script src="app.js" defer></script>
+    
+    
+ </body>
+</html>
