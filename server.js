@@ -101,7 +101,7 @@ async function sendTicket({ name, email, ticket_id }) {
         service: 'gmail',
         auth: {
             user: 'udaan.techy@gmail.com',
-            pass: 'uuneafhcqpzljegt'
+            pass: 'avucjuaimfwbxvvq'
         }
     });
 
